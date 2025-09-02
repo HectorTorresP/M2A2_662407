@@ -1,0 +1,74 @@
+<!-- 662407 -->
+<!DOCTYPE html>
+<html lang="es"></html>
+<HTML>
+
+<HEAD>
+    <meta charset="UTF-8">
+    <title> M2A2 - Torneo videojuegos</title>
+</HEAD>
+
+<body>
+<form action="resultado.html" method="GET">
+    <table border="1" cellpadding="8">
+    <tr>
+        <td>Nombre del jugador: </td>
+        <td> 
+            <input type="text" id="nombre" name="nombre" minlength="3" maxlength="15" required>
+        </td>
+    </tr>
+    <tr>
+        <td>Correo: </td>
+        <td>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+        </td>
+    </tr>
+    <tr>
+        <td>Edad: </td>
+        <td>
+            <input type="number" id="edad" name="edad" min="12" max="40" required>
+        </td>
+    </tr>
+    <tr>
+        <td>Nickname: </td>
+        <td>
+            <input type="text" id="nickname" name="nickname" placeholder="Solo utilizar letras o números" pattern="[A-Za-z0-9]+" required>
+        </td>
+    </tr>
+    <tr>
+        <td>Categoría: </td>
+        <td>
+            <input type="radio" id="principiante" name="nivel" value="principiante" required>
+            <label for="principiante">Principiante</label>
+            <input type="radio" id="intermedio" name="nivel" value="intermedio">
+            <label for="intermedio">Intermedio</label>
+            <input type="radio" id="experto" name="nivel" value="experto">
+            <label for="experto">Experto</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Juegos favoritos: </td>
+        <td>
+            <input type="checkbox" id="fifa" name="juegos" value="fifa">
+            <label for="fifa">FIFA</label>
+            <input type="checkbox" id="lol" name="juegos" value="lol">
+            <label for="lol">LoL</label>
+            <input type="checkbox" id="minecraft" name="juegos" value="minecraft">
+            <label for="minecraft">Minecraft</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Fecha de inscripción: </td>
+        <td><input type="date" id="fecha" name="fecha" min="2025-01-01" max="2025-12-31"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align:center;">
+            <input type="submit" value="Enviar formulario">
+            <input type="reset" value="Restablecer formulario">
+        </td>
+    </tr>
+    </table>
+</form>
+</body>
+
+</HTML>
